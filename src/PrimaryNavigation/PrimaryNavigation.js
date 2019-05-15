@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
-import { compose } from 'redux';
-import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import isEmpty from 'lodash/isEmpty';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import AccountCircle from '@material-ui/icons/AccountCircle';
@@ -11,9 +8,8 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import withStyles from '@material-ui/core/styles/withStyles';
 import Typography from '@material-ui/core/Typography';
-import { logout as logoutAction } from '../redux/authentication';
 
-const PrimaryNavigation = ({ user, logout, classes }) => {
+const PrimaryNavigation = ({ user, mainNav, onLogout, classes }) => {
   const [open, setOpen] = useState(false);
   const [menuAnchor, setMenuAnchor] = useState();
 
@@ -21,7 +17,7 @@ const PrimaryNavigation = ({ user, logout, classes }) => {
     <React.Fragment>
       {user ? (
         <React.Fragment>
-          {window.config.mainNav.map(nav => (
+          {mainNav.map(nav => (
             <Button
               key={nav.href}
               component="a"
@@ -65,7 +61,7 @@ const PrimaryNavigation = ({ user, logout, classes }) => {
             }}
           >
             <MenuItem disabled>My Organization</MenuItem>
-            <MenuItem onClick={logout}>Log Out</MenuItem>
+            <MenuItem onClick={onLogout}>Log Out</MenuItem>
           </Menu>
         </React.Fragment>
       ) : (
@@ -78,8 +74,14 @@ const PrimaryNavigation = ({ user, logout, classes }) => {
 };
 
 PrimaryNavigation.propTypes = {
-  user: PropTypes.shape({}),
-  logout: PropTypes.func.isRequired,
+  user: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+  }),
+  mainNav: PropTypes.arrayOf(PropTypes.shape({
+    href: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+  })),
+  onLogout: PropTypes.func.isRequired,
   classes: PropTypes.shape({
     button: PropTypes.string.isRequired,
     userName: PropTypes.string.isRequired,
@@ -88,6 +90,7 @@ PrimaryNavigation.propTypes = {
 
 PrimaryNavigation.defaultProps = {
   user: null,
+  mainNav: [],
 };
 
 const styles = theme => ({
@@ -101,14 +104,4 @@ const styles = theme => ({
   },
 });
 
-const mapStateToProps = state => ({
-  user: isEmpty(state.user) ? null : state.user,
-});
-
-export default compose(
-  withStyles(styles),
-  connect(
-    mapStateToProps,
-    { logout: logoutAction },
-  ),
-)(PrimaryNavigation);
+export default withStyles(styles)(PrimaryNavigation);
