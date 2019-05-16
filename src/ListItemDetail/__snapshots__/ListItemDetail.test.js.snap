@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItemDetail component matches snapshot with a label prop 1`] = `
+<div>
+  <li
+    class="MuiListItem-root-3 MuiListItem-default-6 MuiListItem-gutters-11"
+  >
+    <div
+      class="MuiListItemText-root-15 ListItemDetail-item-2"
+      data-testid="label-list-text"
+    >
+      <span
+        class="MuiTypography-root-21 MuiTypography-subheading-28 ListItemDetail-label-1"
+      >
+        TestLabel
+      </span>
+    </div>
+    <div
+      class="MuiListItemText-root-15"
+      data-testid="value-list-text"
+    >
+      <span
+        class="MuiTypography-root-21 MuiTypography-subheading-28 MuiListItemText-primary-18"
+      >
+        TestValue
+      </span>
+    </div>
+  </li>
+</div>
+`;
