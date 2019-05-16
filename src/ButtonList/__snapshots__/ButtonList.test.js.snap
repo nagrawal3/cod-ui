@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonList-bottom matches the snapshot - alignBottom 1`] = `
+<div>
+  <div
+    class="MuiGrid-item-109 ButtonList-root-103 ButtonList-alignBottom-105"
+  >
+    <button
+      type="submit"
+    >
+      Test1
+    </button>
+    <button
+      type="submit"
+    >
+      Test2
+    </button>
+    <button
+      type="submit"
+    >
+      Test3
+    </button>
+  </div>
+</div>
+`;
+
+exports[`ButtonList-top matches the snapshot - alignTop 1`] = `
+<div>
+  <div
+    class="MuiGrid-item-7 ButtonList-root-1 ButtonList-alignTop-2"
+  >
+    <button
+      type="submit"
+    >
+      Test1
+    </button>
+    <button
+      type="submit"
+    >
+      Test2
+    </button>
+    <button
+      type="submit"
+    >
+      Test3
+    </button>
+  </div>
+</div>
+`;
