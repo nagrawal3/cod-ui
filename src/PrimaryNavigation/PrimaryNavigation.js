@@ -75,12 +75,14 @@ const PrimaryNavigation = ({ user, mainNav, onLogout, classes }) => {
 
 PrimaryNavigation.propTypes = {
   user: PropTypes.shape({
-    name: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
   }),
-  mainNav: PropTypes.arrayOf(PropTypes.shape({
-    href: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
-  })),
+  mainNav: PropTypes.arrayOf(
+    PropTypes.shape({
+      href: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+    }),
+  ),
   onLogout: PropTypes.func.isRequired,
   classes: PropTypes.shape({
     button: PropTypes.string.isRequired,

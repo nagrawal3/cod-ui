@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PrimaryNavigation matches the snapshot 1`] = `
+<div>
+  <a
+    class="MuiButtonBase-root-29 MuiButton-root-3 MuiButton-text-5 MuiButton-flat-8 PrimaryNavigation-button-1"
+    href="/login"
+    role="button"
+    tabindex="0"
+  >
+    <span
+      class="MuiButton-label-4"
+    >
+      Login
+    </span>
+    <span
+      class="MuiTouchRipple-root-32"
+    />
+  </a>
+</div>
+`;

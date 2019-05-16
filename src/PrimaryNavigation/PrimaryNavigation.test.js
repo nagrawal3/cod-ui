@@ -1,17 +1,30 @@
 import React from 'react';
 import { render } from 'react-testing-library';
+import { MemoryRouter } from 'react-router-dom';
 import PrimaryNavigation from './PrimaryNavigation';
 
 describe('PrimaryNavigation', () => {
   it('matches the snapshot', () => {
-    const { container } = render(<PrimaryNavigation />);
+    const { container } = render(
+      <MemoryRouter initialEntries={['/']}>
+        <PrimaryNavigation {...{ onLogout() {} }} />
+      </MemoryRouter>,
+    );
     expect(container).toMatchSnapshot();
   });
 
   it('should render nav buttons if user is passed in', () => {
-    const { getByTestId } = render(<PrimaryNavigation />, {
-      user: { email: 'foo' },
-    });
+    const { getByTestId } = render(
+      <MemoryRouter initialEntries={['/']}>
+        <PrimaryNavigation
+          {...{
+            user: { email: 'foo' },
+            mainNav: [{ label: 'Partners', href: 'http://partner' }],
+            onLogout() {},
+          }}
+        />
+      </MemoryRouter>,
+    );
     expect(getByTestId('partner-button')).toBeInTheDocument();
   });
 
