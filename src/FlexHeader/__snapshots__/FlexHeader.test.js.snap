@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlexHeader matches the snapshot with borderBottom prop 1`] = `
+<div>
+  <div
+    class="MuiGrid-container-207 FlexHeader-root-203 FlexHeader-borderBottom-205"
+    data-testid="flex-header"
+  >
+    <div>
+      Test
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FlexHeader matches the snapshot with both marginTop and borderBottom prop 1`] = `
+<div>
+  <div
+    class="MuiGrid-container-308 FlexHeader-root-304 FlexHeader-borderBottom-306 FlexHeader-marginTop-305"
+    data-testid="flex-header"
+  >
+    <div
+      data-testid="flex-header-content"
+    >
+      Test
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FlexHeader matches the snapshot with marginTop prop 1`] = `
+<div>
+  <div
+    class="MuiGrid-container-106 FlexHeader-root-102 FlexHeader-marginTop-103"
+    data-testid="flex-header"
+  >
+    <div>
+      Test
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FlexHeader matches the snapshot with no props 1`] = `
+<div>
+  <div
+    class="MuiGrid-container-5 FlexHeader-root-1"
+    data-testid="flex-header"
+  >
+    <div>
+      Test
+    </div>
+  </div>
+</div>
+`;
