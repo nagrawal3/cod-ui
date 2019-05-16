@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WorkflowStatus matches the snapshot with label prop 1`] = `
+<div>
+  <div
+    class="MuiGrid-item-6 WorkflowStatus-grow-4"
+  >
+    <div
+      class="MuiGrid-container-5"
+    >
+      <span
+        class="MuiTypography-root-102 MuiTypography-overline-122 MuiTypography-gutterBottom-129 WorkflowStatus-label-2"
+        data-testid="workflow-label"
+      >
+        Agreement Status
+      </span>
+      <span
+        class="MuiTypography-root-102 MuiTypography-overline-122 MuiTypography-gutterBottom-129 WorkflowStatusItem-inactive-139 WorkflowStatusItem-declinedStatus-140"
+      >
+        Declined
+      </span>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root-144 WorkflowStatus-arrow-3"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+        />
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        class="MuiTypography-root-102 MuiTypography-overline-122 MuiTypography-gutterBottom-129 WorkflowStatusItem-active-138 WorkflowStatusItem-draftStatus-141"
+      >
+        Draft
+      </span>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root-144 WorkflowStatus-arrow-3"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+        />
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        class="MuiTypography-root-102 MuiTypography-overline-122 MuiTypography-gutterBottom-129 WorkflowStatusItem-inactive-139 WorkflowStatusItem-pendingStatus-142"
+      >
+        Pending
+      </span>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root-144 WorkflowStatus-arrow-3"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+        />
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        class="MuiTypography-root-102 MuiTypography-overline-122 MuiTypography-gutterBottom-129 WorkflowStatusItem-inactive-139 WorkflowStatusItem-acceptedStatus-143"
+      >
+        Accepted
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WorkflowStatus matches the snapshot without label prop 1`] = `
+<div>
+  <div
+    class="MuiGrid-item-158 WorkflowStatus-grow-156"
+  >
+    <div
+      class="MuiGrid-container-157"
+    >
+      <span
+        class="MuiTypography-root-260 MuiTypography-overline-280 MuiTypography-gutterBottom-287 WorkflowStatusItem-inactive-255 WorkflowStatusItem-declinedStatus-256"
+      >
+        Declined
+      </span>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root-296 WorkflowStatus-arrow-155"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+        />
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        class="MuiTypography-root-260 MuiTypography-overline-280 MuiTypography-gutterBottom-287 WorkflowStatusItem-active-254 WorkflowStatusItem-draftStatus-257"
+      >
+        Draft
+      </span>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root-296 WorkflowStatus-arrow-155"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+        />
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        class="MuiTypography-root-260 MuiTypography-overline-280 MuiTypography-gutterBottom-287 WorkflowStatusItem-inactive-255 WorkflowStatusItem-pendingStatus-258"
+      >
+        Pending
+      </span>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root-296 WorkflowStatus-arrow-155"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+        />
+        <path
+          d="M0 0h24v24H0V0z"
+          fill="none"
+        />
+      </svg>
+      <span
+        class="MuiTypography-root-260 MuiTypography-overline-280 MuiTypography-gutterBottom-287 WorkflowStatusItem-inactive-255 WorkflowStatusItem-acceptedStatus-259"
+      >
+        Accepted
+      </span>
+    </div>
+  </div>
+</div>
+`;
