@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PopupFormButton matches the snapshot 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root-31 MuiButton-root-5 MuiButton-outlined-13"
+    data-testid="popup-button"
+    tabindex="0"
+    type="button"
+  >
+    <span
+      class="MuiButton-label-6"
+    >
+      Submit
+    </span>
+    <span
+      class="MuiTouchRipple-root-34"
+    />
+  </button>
+</div>
+`;
