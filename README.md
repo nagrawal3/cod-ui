@@ -42,6 +42,8 @@ The current list of available components:
 - `Table` - Table component that uses DevExtreme React Grid.
 - `TableCell` - Table cell component that works with `Table`.
 - `TextField` - TextField form field component integrated with Formik.
+- `WorkflowStatus` - Workflow status component, showing different status states.
+- `WorkflowStatusItem` - An individual workflow status item component.
 
 \* Uses redux.
 
