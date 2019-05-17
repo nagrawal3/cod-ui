@@ -34,7 +34,8 @@ The current list of available components:
 - `Logo` - Logo component that links to `/` by default. Pulls logo from theme.
 - \* `Notifications` - Using `notistack` to display multiple Material Snackbar notifications.
 - `PageWrapper` - Helpful component to wrap your pages. Sets up initial grid.
-- `PopupFormButton` - Provide form and button components, and it will integrate them to show form on button click. Icon's are supported too.
+- `PopupFormButton` - Provide form and button components, and it will integrate them to show form on
+  button click. Icon's are supported too.
 - `SectionTitle` - Page or section title component.
 - `Select` - Select form field component integrated with Formik.
 - `SubTitle` - Subtitle component.
