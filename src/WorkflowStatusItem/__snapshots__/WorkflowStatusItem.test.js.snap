@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WorkflowStatusItem matches the snapshot 1`] = `
+<div>
+  <span
+    class="MuiTypography-root-7 MuiTypography-overline-27 MuiTypography-gutterBottom-34 WorkflowStatusItem-active-1 WorkflowStatusItem-draftStatus-4"
+  >
+    test
+  </span>
+</div>
+`;
