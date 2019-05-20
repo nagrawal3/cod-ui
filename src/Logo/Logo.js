@@ -16,7 +16,7 @@ function Logo(props) {
 Logo.propTypes = {
   classes: PropTypes.shape({ logo: PropTypes.string.isRequired }).isRequired,
   theme: PropTypes.shape({
-    logo: PropTypes.string.isRequired,
+    logo: PropTypes.string,
   }).isRequired,
   href: PropTypes.string.isRequired,
 };
