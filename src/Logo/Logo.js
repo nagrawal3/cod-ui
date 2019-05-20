@@ -7,11 +7,9 @@ function Logo(props) {
   const { theme, classes, href } = props;
 
   return (
-    theme.logo && (
-      <Link to={href || '/'}>
-        <img alt="Logo" src={theme.logo} className={classes.logo} />
-      </Link>
-    )
+    <Link to={href || '/'}>
+      {theme.logo && <img alt="Logo" src={theme.logo} className={classes.logo} />}
+    </Link>
   );
 }
 
