@@ -3,18 +3,19 @@
 exports[`PrimaryNavigation matches the snapshot 1`] = `
 <div>
   <a
-    class="MuiButtonBase-root-29 MuiButton-root-3 MuiButton-text-5 MuiButton-flat-8 PrimaryNavigation-button-1"
+    aria-disabled="false"
+    class="MuiButtonBase-root MuiButton-root PrimaryNavigation-button-1 MuiButton-text"
     href="/login"
     role="button"
     tabindex="0"
   >
     <span
-      class="MuiButton-label-4"
+      class="MuiButton-label"
     >
       Login
     </span>
     <span
-      class="MuiTouchRipple-root-32"
+      class="MuiTouchRipple-root"
     />
   </a>
 </div>

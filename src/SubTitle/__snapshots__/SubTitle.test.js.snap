@@ -3,13 +3,13 @@
 exports[`SubTitle component matches snapshot with a label prop 1`] = `
 <div>
   <span
-    class="MuiTypography-root-2 MuiTypography-overline-22 MuiTypography-gutterBottom-29 SubTitle-label-1"
+    class="MuiTypography-root MuiTypography-overline MuiTypography-gutterBottom SubTitle-label-1"
     data-testid="subtitle-label"
   >
     Partner: 
   </span>
   <h6
-    class="MuiTypography-root-2 MuiTypography-subtitle1-20 MuiTypography-gutterBottom-29"
+    class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-gutterBottom"
     data-testid="subtitle-content"
   >
     Partner1
@@ -20,7 +20,7 @@ exports[`SubTitle component matches snapshot with a label prop 1`] = `
 exports[`SubTitle component matches snapshot without a label prop 1`] = `
 <div>
   <h6
-    class="MuiTypography-root-39 MuiTypography-subtitle1-57 MuiTypography-gutterBottom-66"
+    class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-gutterBottom"
     data-testid="subtitle-content"
   >
     Partner1
