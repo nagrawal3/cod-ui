@@ -3,24 +3,24 @@
 exports[`ListItemDetail component matches snapshot with a label prop 1`] = `
 <div>
   <li
-    class="MuiListItem-root-3 MuiListItem-default-6 MuiListItem-gutters-11"
+    class="MuiListItem-root MuiListItem-gutters"
   >
     <div
-      class="MuiListItemText-root-15 ListItemDetail-item-2"
+      class="MuiListItemText-root ListItemDetail-item-2"
       data-testid="label-list-text"
     >
       <span
-        class="MuiTypography-root-21 MuiTypography-subheading-28 ListItemDetail-label-1"
+        class="MuiTypography-root MuiTypography-body1 ListItemDetail-label-1"
       >
         TestLabel
       </span>
     </div>
     <div
-      class="MuiListItemText-root-15"
+      class="MuiListItemText-root"
       data-testid="value-list-text"
     >
       <span
-        class="MuiTypography-root-21 MuiTypography-subheading-28 MuiListItemText-primary-18"
+        class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary"
       >
         TestValue
       </span>
