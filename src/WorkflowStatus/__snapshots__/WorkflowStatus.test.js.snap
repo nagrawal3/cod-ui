@@ -9,13 +9,13 @@ exports[`WorkflowStatus matches the snapshot with label prop 1`] = `
       class="MuiGrid-root MuiGrid-container"
     >
       <span
-        class="MuiTypography-root MuiTypography-overline MuiTypography-gutterBottom WorkflowStatus-label-2"
+        class="MuiTypography-root WorkflowStatus-label-2 MuiTypography-overline MuiTypography-gutterBottom"
         data-testid="workflow-label"
       >
         Agreement Status
       </span>
       <span
-        class="MuiTypography-root MuiTypography-overline MuiTypography-gutterBottom WorkflowStatusItem-inactive-139 WorkflowStatusItem-declinedStatus-140"
+        class="MuiTypography-root WorkflowStatusItem-inactive-139 WorkflowStatusItem-declinedStatus-140 MuiTypography-overline MuiTypography-gutterBottom"
       >
         Declined
       </span>
@@ -35,7 +35,7 @@ exports[`WorkflowStatus matches the snapshot with label prop 1`] = `
         />
       </svg>
       <span
-        class="MuiTypography-root MuiTypography-overline MuiTypography-gutterBottom WorkflowStatusItem-active-138 WorkflowStatusItem-draftStatus-141"
+        class="MuiTypography-root WorkflowStatusItem-active-138 WorkflowStatusItem-draftStatus-141 MuiTypography-overline MuiTypography-gutterBottom"
       >
         Draft
       </span>
@@ -55,7 +55,7 @@ exports[`WorkflowStatus matches the snapshot with label prop 1`] = `
         />
       </svg>
       <span
-        class="MuiTypography-root MuiTypography-overline MuiTypography-gutterBottom WorkflowStatusItem-inactive-139 WorkflowStatusItem-pendingStatus-142"
+        class="MuiTypography-root WorkflowStatusItem-inactive-139 WorkflowStatusItem-pendingStatus-142 MuiTypography-overline MuiTypography-gutterBottom"
       >
         Pending
       </span>
@@ -75,7 +75,7 @@ exports[`WorkflowStatus matches the snapshot with label prop 1`] = `
         />
       </svg>
       <span
-        class="MuiTypography-root MuiTypography-overline MuiTypography-gutterBottom WorkflowStatusItem-inactive-139 WorkflowStatusItem-acceptedStatus-143"
+        class="MuiTypography-root WorkflowStatusItem-inactive-139 WorkflowStatusItem-acceptedStatus-143 MuiTypography-overline MuiTypography-gutterBottom"
       >
         Accepted
       </span>
@@ -93,7 +93,7 @@ exports[`WorkflowStatus matches the snapshot without label prop 1`] = `
       class="MuiGrid-root MuiGrid-container"
     >
       <span
-        class="MuiTypography-root MuiTypography-overline MuiTypography-gutterBottom WorkflowStatusItem-inactive-261 WorkflowStatusItem-declinedStatus-262"
+        class="MuiTypography-root WorkflowStatusItem-inactive-261 WorkflowStatusItem-declinedStatus-262 MuiTypography-overline MuiTypography-gutterBottom"
       >
         Declined
       </span>
@@ -113,7 +113,7 @@ exports[`WorkflowStatus matches the snapshot without label prop 1`] = `
         />
       </svg>
       <span
-        class="MuiTypography-root MuiTypography-overline MuiTypography-gutterBottom WorkflowStatusItem-active-260 WorkflowStatusItem-draftStatus-263"
+        class="MuiTypography-root WorkflowStatusItem-active-260 WorkflowStatusItem-draftStatus-263 MuiTypography-overline MuiTypography-gutterBottom"
       >
         Draft
       </span>
@@ -133,7 +133,7 @@ exports[`WorkflowStatus matches the snapshot without label prop 1`] = `
         />
       </svg>
       <span
-        class="MuiTypography-root MuiTypography-overline MuiTypography-gutterBottom WorkflowStatusItem-inactive-261 WorkflowStatusItem-pendingStatus-264"
+        class="MuiTypography-root WorkflowStatusItem-inactive-261 WorkflowStatusItem-pendingStatus-264 MuiTypography-overline MuiTypography-gutterBottom"
       >
         Pending
       </span>
@@ -153,7 +153,7 @@ exports[`WorkflowStatus matches the snapshot without label prop 1`] = `
         />
       </svg>
       <span
-        class="MuiTypography-root MuiTypography-overline MuiTypography-gutterBottom WorkflowStatusItem-inactive-261 WorkflowStatusItem-acceptedStatus-265"
+        class="MuiTypography-root WorkflowStatusItem-inactive-261 WorkflowStatusItem-acceptedStatus-265 MuiTypography-overline MuiTypography-gutterBottom"
       >
         Accepted
       </span>
