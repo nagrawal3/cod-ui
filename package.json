@@ -32,6 +32,10 @@
     ]
   },
   "homepage": "https://github.com/codfish/cod-ui#readme",
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
