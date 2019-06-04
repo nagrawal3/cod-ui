@@ -3,7 +3,7 @@
 exports[`SubTitle component matches snapshot with a label prop 1`] = `
 <div>
   <span
-    class="MuiTypography-root MuiTypography-overline MuiTypography-gutterBottom SubTitle-label-1"
+    class="MuiTypography-root SubTitle-label-1 MuiTypography-overline MuiTypography-gutterBottom"
     data-testid="subtitle-label"
   >
     Partner: 

@@ -10,7 +10,7 @@ exports[`ListItemDetail component matches snapshot with a label prop 1`] = `
       data-testid="label-list-text"
     >
       <span
-        class="MuiTypography-root MuiTypography-body1 ListItemDetail-label-1"
+        class="MuiTypography-root ListItemDetail-label-1 MuiTypography-body1"
       >
         TestLabel
       </span>
@@ -20,7 +20,7 @@ exports[`ListItemDetail component matches snapshot with a label prop 1`] = `
       data-testid="value-list-text"
     >
       <span
-        class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary"
+        class="MuiTypography-root MuiListItemText-primary MuiTypography-body1"
       >
         TestValue
       </span>
