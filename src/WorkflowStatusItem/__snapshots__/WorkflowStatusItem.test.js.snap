@@ -3,7 +3,7 @@
 exports[`WorkflowStatusItem matches the snapshot 1`] = `
 <div>
   <span
-    class="MuiTypography-root WorkflowStatusItem-active-1 WorkflowStatusItem-draftStatus-4 MuiTypography-overline MuiTypography-gutterBottom"
+    class="MuiTypography-root makeStyles-active-1 makeStyles-draftStatus-4 MuiTypography-overline MuiTypography-gutterBottom"
   >
     test
   </span>

@@ -2,10 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Grid from '@material-ui/core/Grid';
 import classNames from 'classnames';
-import withStyles from '@material-ui/core/styles/withStyles';
 import Typography from '@material-ui/core/Typography';
+import useStyles from './styles';
 
-const SectionTitle = ({ noWrap, component, variant, grow, children, marginTop, classes }) => {
+const SectionTitle = ({ noWrap, component, variant, grow, children, marginTop }) => {
+  const classes = useStyles();
   const wrapperClasses = classNames({
     [classes.grow]: grow,
     [classes.shrink]: !grow,
@@ -34,9 +35,6 @@ SectionTitle.propTypes = {
   marginTop: PropTypes.bool,
   grow: PropTypes.bool,
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.array, PropTypes.node]),
-  classes: PropTypes.shape({
-    text: PropTypes.string.isRequired,
-  }).isRequired,
 };
 
 SectionTitle.defaultProps = {
@@ -48,21 +46,4 @@ SectionTitle.defaultProps = {
   children: [],
 };
 
-const styles = theme => ({
-  text: {
-    marginBottom: theme.spacing.unit * 2,
-  },
-  grow: {
-    flexGrow: 1,
-    paddingRight: '3rem',
-  },
-  shrink: {
-    flexGrow: 0,
-    paddingRight: '3rem',
-  },
-  marginTop: {
-    marginTop: '3rem',
-  },
-});
-
-export default withStyles(styles)(SectionTitle);
+export default SectionTitle;

@@ -3,7 +3,7 @@
 exports[`ButtonList-bottom matches the snapshot - alignBottom 1`] = `
 <div>
   <div
-    class="MuiGrid-root ButtonList-root-109 ButtonList-alignBottom-111 MuiGrid-item"
+    class="MuiGrid-root makeStyles-root-109 makeStyles-alignBottom-111 MuiGrid-item"
   >
     <button
       type="submit"
@@ -27,7 +27,7 @@ exports[`ButtonList-bottom matches the snapshot - alignBottom 1`] = `
 exports[`ButtonList-top matches the snapshot - alignTop 1`] = `
 <div>
   <div
-    class="MuiGrid-root ButtonList-root-1 ButtonList-alignTop-2 MuiGrid-item"
+    class="MuiGrid-root makeStyles-root-1 makeStyles-alignTop-2 MuiGrid-item"
   >
     <button
       type="submit"

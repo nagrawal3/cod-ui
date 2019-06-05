@@ -1,18 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Grid from '@material-ui/core/Grid';
-import withStyles from '@material-ui/core/styles/withStyles';
 import Typography from '@material-ui/core/Typography';
 import ArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft';
 import ArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 import WorkflowStatusItem from '../WorkflowStatusItem';
+import useStyles from './styles';
 
 /**
  * Displays the current state of an editorial workflow
  *
  * @example ./__docs__/WorkflowStatus.md
  */
-const WorkflowStatus = ({ status, label, classes }) => {
+const WorkflowStatus = ({ status, label }) => {
+  const classes = useStyles();
+
   return (
     <Grid item className={classes.grow}>
       <Grid container>
@@ -42,31 +44,10 @@ const WorkflowStatus = ({ status, label, classes }) => {
 WorkflowStatus.propTypes = {
   status: PropTypes.string.isRequired,
   label: PropTypes.string,
-  classes: PropTypes.shape({
-    root: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
-  }).isRequired,
 };
 
 WorkflowStatus.defaultProps = {
   label: null,
 };
 
-const styles = () => ({
-  root: {
-    display: 'flex',
-  },
-  label: {
-    fontWeight: 'bold',
-    padding: '0 1rem 0 0',
-  },
-  arrow: {
-    margin: '.25rem 0',
-    opacity: '.1',
-  },
-  grow: {
-    flexGrow: 1,
-  },
-});
-
-export default withStyles(styles)(WorkflowStatus);
+export default WorkflowStatus;

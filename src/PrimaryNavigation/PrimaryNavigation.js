@@ -6,10 +6,11 @@ import IconButton from '@material-ui/core/IconButton';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
-import withStyles from '@material-ui/core/styles/withStyles';
 import Typography from '@material-ui/core/Typography';
+import useStyles from './styles';
 
-const PrimaryNavigation = ({ user, mainNav, onLogout, classes }) => {
+const PrimaryNavigation = ({ user, mainNav, onLogout }) => {
+  const classes = useStyles();
   const [open, setOpen] = useState(false);
   const [menuAnchor, setMenuAnchor] = useState();
 
@@ -84,10 +85,6 @@ PrimaryNavigation.propTypes = {
     }),
   ),
   onLogout: PropTypes.func.isRequired,
-  classes: PropTypes.shape({
-    button: PropTypes.string.isRequired,
-    userName: PropTypes.string.isRequired,
-  }).isRequired,
 };
 
 PrimaryNavigation.defaultProps = {
@@ -95,15 +92,4 @@ PrimaryNavigation.defaultProps = {
   mainNav: [],
 };
 
-const styles = theme => ({
-  button: {
-    color: theme.palette.primary.contrastText,
-    paddingLeft: '1rem',
-    paddingRight: '1rem',
-  },
-  userName: {
-    marginLeft: '.5em',
-  },
-});
-
-export default withStyles(styles)(PrimaryNavigation);
+export default PrimaryNavigation;

@@ -3,7 +3,7 @@
 exports[`FlexHeader matches the snapshot with borderBottom prop 1`] = `
 <div>
   <div
-    class="MuiGrid-root FlexHeader-root-215 FlexHeader-borderBottom-217 MuiGrid-container"
+    class="MuiGrid-root makeStyles-root-215 makeStyles-borderBottom-217 MuiGrid-container"
     data-testid="flex-header"
   >
     <div>
@@ -16,7 +16,7 @@ exports[`FlexHeader matches the snapshot with borderBottom prop 1`] = `
 exports[`FlexHeader matches the snapshot with both marginTop and borderBottom prop 1`] = `
 <div>
   <div
-    class="MuiGrid-root FlexHeader-root-322 FlexHeader-borderBottom-324 FlexHeader-marginTop-323 MuiGrid-container"
+    class="MuiGrid-root makeStyles-root-322 makeStyles-borderBottom-324 makeStyles-marginTop-323 MuiGrid-container"
     data-testid="flex-header"
   >
     <div
@@ -31,7 +31,7 @@ exports[`FlexHeader matches the snapshot with both marginTop and borderBottom pr
 exports[`FlexHeader matches the snapshot with marginTop prop 1`] = `
 <div>
   <div
-    class="MuiGrid-root FlexHeader-root-108 FlexHeader-marginTop-109 MuiGrid-container"
+    class="MuiGrid-root makeStyles-root-108 makeStyles-marginTop-109 MuiGrid-container"
     data-testid="flex-header"
   >
     <div>
@@ -44,7 +44,7 @@ exports[`FlexHeader matches the snapshot with marginTop prop 1`] = `
 exports[`FlexHeader matches the snapshot with no props 1`] = `
 <div>
   <div
-    class="MuiGrid-root FlexHeader-root-1 MuiGrid-container"
+    class="MuiGrid-root makeStyles-root-1 MuiGrid-container"
     data-testid="flex-header"
   >
     <div>

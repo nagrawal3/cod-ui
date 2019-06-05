@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import withStyles from '@material-ui/core/styles/withStyles';
 import Typography from '@material-ui/core/Typography';
 import { Table } from '@devexpress/dx-react-grid-material-ui';
+import useStyles from './styles';
 
 const TableCell = props => {
-  const { classes, tableColumn, value, row } = props;
+  const classes = useStyles();
+  const { tableColumn, value, row } = props;
   const { columnClass, customFormatter, Component, cellClasses = {} } = tableColumn.column;
   const customCellClasses = {};
   let contents;
@@ -41,7 +42,6 @@ const TableCell = props => {
 };
 
 TableCell.propTypes = {
-  classes: PropTypes.shape({}).isRequired,
   tableColumn: PropTypes.shape({}).isRequired,
   value: PropTypes.oneOfType([
     PropTypes.string,
@@ -56,31 +56,4 @@ TableCell.defaultProps = {
   value: '',
 };
 
-const styles = theme => ({
-  bold: {
-    fontWeight: 'bold',
-  },
-  disabled: {
-    opacity: 0.5,
-  },
-  grow: {
-    flexGrow: 2,
-  },
-  success: {
-    background: theme.palette.success,
-  },
-  danger: {
-    background: theme.palette.danger,
-  },
-  warning: {
-    background: theme.palette.warning,
-  },
-  info: {
-    background: theme.palette.info,
-  },
-  highlight: {
-    background: theme.palette.highlight,
-  },
-});
-
-export default withStyles(styles)(TableCell);
+export default TableCell;
