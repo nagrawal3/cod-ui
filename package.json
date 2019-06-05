@@ -33,8 +33,14 @@
   },
   "homepage": "https://github.com/codfish/cod-ui#readme",
   "peerDependencies": {
+    "@material-ui/core": "4.x",
+    "@material-ui/icons": "4.x",
+    "@material-ui/styles": "4.x",
     "react": "*",
-    "react-dom": "*"
+    "react-dom": "*",
+    "react-redux": "*",
+    "react-router-dom": "*",
+    "redux": "*"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
