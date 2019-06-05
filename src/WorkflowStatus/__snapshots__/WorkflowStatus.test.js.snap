@@ -3,25 +3,25 @@
 exports[`WorkflowStatus matches the snapshot with label prop 1`] = `
 <div>
   <div
-    class="MuiGrid-root WorkflowStatus-grow-4 MuiGrid-item"
+    class="MuiGrid-root makeStyles-grow-4 MuiGrid-item"
   >
     <div
       class="MuiGrid-root MuiGrid-container"
     >
       <span
-        class="MuiTypography-root WorkflowStatus-label-2 MuiTypography-overline MuiTypography-gutterBottom"
+        class="MuiTypography-root makeStyles-label-2 MuiTypography-overline MuiTypography-gutterBottom"
         data-testid="workflow-label"
       >
         Agreement Status
       </span>
       <span
-        class="MuiTypography-root WorkflowStatusItem-inactive-139 WorkflowStatusItem-declinedStatus-140 MuiTypography-overline MuiTypography-gutterBottom"
+        class="MuiTypography-root makeStyles-inactive-139 makeStyles-declinedStatus-140 MuiTypography-overline MuiTypography-gutterBottom"
       >
         Declined
       </span>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root WorkflowStatus-arrow-3"
+        class="MuiSvgIcon-root makeStyles-arrow-3"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -35,13 +35,13 @@ exports[`WorkflowStatus matches the snapshot with label prop 1`] = `
         />
       </svg>
       <span
-        class="MuiTypography-root WorkflowStatusItem-active-138 WorkflowStatusItem-draftStatus-141 MuiTypography-overline MuiTypography-gutterBottom"
+        class="MuiTypography-root makeStyles-active-138 makeStyles-draftStatus-141 MuiTypography-overline MuiTypography-gutterBottom"
       >
         Draft
       </span>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root WorkflowStatus-arrow-3"
+        class="MuiSvgIcon-root makeStyles-arrow-3"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -55,13 +55,13 @@ exports[`WorkflowStatus matches the snapshot with label prop 1`] = `
         />
       </svg>
       <span
-        class="MuiTypography-root WorkflowStatusItem-inactive-139 WorkflowStatusItem-pendingStatus-142 MuiTypography-overline MuiTypography-gutterBottom"
+        class="MuiTypography-root makeStyles-inactive-139 makeStyles-pendingStatus-142 MuiTypography-overline MuiTypography-gutterBottom"
       >
         Pending
       </span>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root WorkflowStatus-arrow-3"
+        class="MuiSvgIcon-root makeStyles-arrow-3"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -75,7 +75,7 @@ exports[`WorkflowStatus matches the snapshot with label prop 1`] = `
         />
       </svg>
       <span
-        class="MuiTypography-root WorkflowStatusItem-inactive-139 WorkflowStatusItem-acceptedStatus-143 MuiTypography-overline MuiTypography-gutterBottom"
+        class="MuiTypography-root makeStyles-inactive-139 makeStyles-acceptedStatus-143 MuiTypography-overline MuiTypography-gutterBottom"
       >
         Accepted
       </span>
@@ -87,19 +87,19 @@ exports[`WorkflowStatus matches the snapshot with label prop 1`] = `
 exports[`WorkflowStatus matches the snapshot without label prop 1`] = `
 <div>
   <div
-    class="MuiGrid-root WorkflowStatus-grow-156 MuiGrid-item"
+    class="MuiGrid-root makeStyles-grow-156 MuiGrid-item"
   >
     <div
       class="MuiGrid-root MuiGrid-container"
     >
       <span
-        class="MuiTypography-root WorkflowStatusItem-inactive-261 WorkflowStatusItem-declinedStatus-262 MuiTypography-overline MuiTypography-gutterBottom"
+        class="MuiTypography-root makeStyles-inactive-261 makeStyles-declinedStatus-262 MuiTypography-overline MuiTypography-gutterBottom"
       >
         Declined
       </span>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root WorkflowStatus-arrow-155"
+        class="MuiSvgIcon-root makeStyles-arrow-155"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -113,13 +113,13 @@ exports[`WorkflowStatus matches the snapshot without label prop 1`] = `
         />
       </svg>
       <span
-        class="MuiTypography-root WorkflowStatusItem-active-260 WorkflowStatusItem-draftStatus-263 MuiTypography-overline MuiTypography-gutterBottom"
+        class="MuiTypography-root makeStyles-active-260 makeStyles-draftStatus-263 MuiTypography-overline MuiTypography-gutterBottom"
       >
         Draft
       </span>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root WorkflowStatus-arrow-155"
+        class="MuiSvgIcon-root makeStyles-arrow-155"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -133,13 +133,13 @@ exports[`WorkflowStatus matches the snapshot without label prop 1`] = `
         />
       </svg>
       <span
-        class="MuiTypography-root WorkflowStatusItem-inactive-261 WorkflowStatusItem-pendingStatus-264 MuiTypography-overline MuiTypography-gutterBottom"
+        class="MuiTypography-root makeStyles-inactive-261 makeStyles-pendingStatus-264 MuiTypography-overline MuiTypography-gutterBottom"
       >
         Pending
       </span>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root WorkflowStatus-arrow-155"
+        class="MuiSvgIcon-root makeStyles-arrow-155"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -153,7 +153,7 @@ exports[`WorkflowStatus matches the snapshot without label prop 1`] = `
         />
       </svg>
       <span
-        class="MuiTypography-root WorkflowStatusItem-inactive-261 WorkflowStatusItem-acceptedStatus-265 MuiTypography-overline MuiTypography-gutterBottom"
+        class="MuiTypography-root makeStyles-inactive-261 makeStyles-acceptedStatus-265 MuiTypography-overline MuiTypography-gutterBottom"
       >
         Accepted
       </span>

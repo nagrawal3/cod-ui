@@ -2,9 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Grid from '@material-ui/core/Grid';
-import withStyles from '@material-ui/core/styles/withStyles';
+import useStyles from './styles';
 
-const FlexHeader = ({ children, alignRight, borderBottom, marginTop, classes }) => {
+const FlexHeader = ({ children, alignRight, borderBottom, marginTop }) => {
+  const classes = useStyles();
   const classNames = classnames(classes.root, {
     [classes.alignRight]: alignRight,
     [classes.borderBottom]: borderBottom,
@@ -23,11 +24,6 @@ FlexHeader.propTypes = {
   borderBottom: PropTypes.bool,
   marginTop: PropTypes.bool,
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.array, PropTypes.node]).isRequired,
-  classes: PropTypes.shape({
-    root: PropTypes.string.isRequired,
-    marginTop: PropTypes.string.isRequired,
-    borderBottom: PropTypes.string.isRequired,
-  }).isRequired,
 };
 
 FlexHeader.defaultProps = {
@@ -36,20 +32,4 @@ FlexHeader.defaultProps = {
   marginTop: false,
 };
 
-const styles = () => ({
-  root: {
-    marginTop: 0,
-    marginBottom: 0,
-  },
-  marginTop: {
-    margin: '5rem 0 0 0',
-  },
-  borderBottom: {
-    borderBottom: '1px solid silver',
-  },
-  alignRight: {
-    justifyContent: 'flex-end',
-  },
-});
-
-export default withStyles(styles)(FlexHeader);
+export default FlexHeader;

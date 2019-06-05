@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import withStyles from '@material-ui/core/styles/withStyles';
+import useTheme from '@material-ui/styles/useTheme';
 import Link from '../Link';
+import useStyles from './styles';
 
 function Logo(props) {
-  const { theme, classes, href } = props;
+  const { href } = props;
+  const classes = useStyles();
+  const theme = useTheme();
 
   return (
     <Link to={href || '/'}>
@@ -14,19 +17,7 @@ function Logo(props) {
 }
 
 Logo.propTypes = {
-  classes: PropTypes.shape({ logo: PropTypes.string.isRequired }).isRequired,
-  theme: PropTypes.shape({
-    logo: PropTypes.string,
-  }).isRequired,
   href: PropTypes.string.isRequired,
 };
 
-const styles = () => ({
-  logo: {
-    width: '2rem',
-    maxHeight: '2.5rem',
-    marginRight: '1rem',
-  },
-});
-
-export default withStyles(styles, { withTheme: true })(Logo);
+export default Logo;

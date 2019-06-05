@@ -6,11 +6,11 @@ exports[`ListItemDetail component matches snapshot with a label prop 1`] = `
     class="MuiListItem-root MuiListItem-gutters"
   >
     <div
-      class="MuiListItemText-root ListItemDetail-item-2"
+      class="MuiListItemText-root makeStyles-item-2"
       data-testid="label-list-text"
     >
       <span
-        class="MuiTypography-root ListItemDetail-label-1 MuiTypography-body1"
+        class="MuiTypography-root makeStyles-label-1 MuiTypography-body1"
       >
         TestLabel
       </span>

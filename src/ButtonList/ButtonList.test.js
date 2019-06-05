@@ -1,10 +1,10 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { renderWithTheme } from '../../testUtils';
 import ButtonList from './ButtonList';
 
 describe('ButtonList-top', () => {
   it('matches the snapshot - alignTop', () => {
-    const { container } = render(
+    const { container } = renderWithTheme(
       <ButtonList align="top">
         <button type="submit">Test1</button>
         <button type="submit">Test2</button>
@@ -17,7 +17,7 @@ describe('ButtonList-top', () => {
 
 describe('ButtonList-bottom', () => {
   it('matches the snapshot - alignBottom', () => {
-    const { container } = render(
+    const { container } = renderWithTheme(
       <ButtonList align="bottom">
         <button type="submit">Test1</button>
         <button type="submit">Test2</button>

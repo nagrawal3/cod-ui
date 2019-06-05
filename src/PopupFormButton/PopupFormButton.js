@@ -3,11 +3,10 @@ import Popover from '@material-ui/core/Popover';
 import PropTypes from 'prop-types';
 import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
-import withStyles from '@material-ui/core/styles/withStyles';
+import useStyles from './styles';
 
 const PopupFormButton = props => {
   const {
-    classes,
     Form,
     Icon,
     FormProps,
@@ -18,6 +17,7 @@ const PopupFormButton = props => {
       ...ButtonProps
     },
   } = props;
+  const classes = useStyles();
   const [isOpen, setIsOpen] = useState(false);
   const [anchor, setAnchor] = useState(null);
 
@@ -72,9 +72,6 @@ const PopupFormButton = props => {
 };
 
 PopupFormButton.propTypes = {
-  classes: PropTypes.shape({
-    rightIcon: PropTypes.string.isRequired,
-  }).isRequired,
   Form: PropTypes.func.isRequired,
   ButtonProps: PropTypes.shape({}),
   buttonText: PropTypes.string,
@@ -92,10 +89,4 @@ PopupFormButton.defaultProps = {
   FormProps: {},
 };
 
-const styles = theme => ({
-  rightIcon: {
-    marginLeft: theme.spacing.unit,
-  },
-});
-
-export default withStyles(styles)(PopupFormButton);
+export default PopupFormButton;
