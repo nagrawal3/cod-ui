@@ -4,6 +4,7 @@ import {
   PagingState,
   SortingState,
   SearchState,
+  IntegratedSorting,
   IntegratedFiltering,
   IntegratedPaging,
 } from '@devexpress/dx-react-grid';
@@ -16,7 +17,7 @@ import {
 import TableCell from '../TableCell';
 
 const Table = props => {
-  const { data, columns, pageSize, hasPagination, searchValue } = props;
+  const { data, columns, pageSize, hasPagination, searchValue, sortable, defaultSorting } = props;
   const tableColumnExtensions = [];
 
   columns.forEach(column => {
@@ -28,7 +29,8 @@ const Table = props => {
   return (
     <React.Fragment>
       <Grid rows={data} columns={columns}>
-        <SortingState />
+        {sortable && <SortingState defaultSorting={defaultSorting} />}
+        {sortable && <IntegratedSorting />}
         <SearchState value={searchValue} />
         <IntegratedFiltering />
 
@@ -39,8 +41,7 @@ const Table = props => {
           cellComponent={TableCell}
           columnExtensions={tableColumnExtensions}
         />
-        <TableHeaderRow showSortingControls />
-
+        {sortable ? <TableHeaderRow showSortingControls /> : <TableHeaderRow />}
         {hasPagination && <PagingPanel />}
       </Grid>
     </React.Fragment>
@@ -53,12 +54,16 @@ Table.propTypes = {
   hasPagination: PropTypes.bool,
   pageSize: PropTypes.number,
   searchValue: PropTypes.string,
+  sortable: PropTypes.bool,
+  defaultSorting: PropTypes.arrayOf(PropTypes.shape({})),
 };
 
 Table.defaultProps = {
   hasPagination: false,
-  pageSize: null,
+  pageSize: 10,
   searchValue: '',
+  sortable: true,
+  defaultSorting: [{}],
 };
 
 export default Table;
