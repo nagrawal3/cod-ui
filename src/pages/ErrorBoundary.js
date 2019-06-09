@@ -29,7 +29,7 @@ class ErrorBoundary extends React.Component {
     if (hasError) {
       return (
         <Grid container>
-          <Grid container justify="center" spacing={16}>
+          <Grid container justify="center" spacing={2}>
             <Typography variant="h2" component="h2" className={classes.text}>
               Something went wrong.
             </Typography>
