@@ -11,7 +11,7 @@
     "lint": "eslint .",
     "lint:commit": "commitlint-travis",
     "lint:md": "markdownlint -i node_modules -i build .",
-    "test": "jest --watchAll --verbose=true --silent",
+    "test": "jest --watchAll --verbose=true",
     "test:ci": "jest --verbose=true --silent --ci --coverage"
   },
   "repository": {
