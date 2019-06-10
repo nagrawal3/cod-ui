@@ -72,10 +72,10 @@ const PopupFormButton = props => {
 };
 
 PopupFormButton.propTypes = {
-  Form: PropTypes.func.isRequired,
+  Form: PropTypes.elementType.isRequired,
   ButtonProps: PropTypes.shape({}),
   buttonText: PropTypes.string,
-  Icon: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
+  Icon: PropTypes.elementType,
   /**
    * Any props you want to pass into the form component.
    */
