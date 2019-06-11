@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import useStyles from './styles';
 
 function Loader() {
@@ -19,13 +18,5 @@ function Loader() {
     </div>
   );
 }
-
-Loader.propTypes = {
-  classes: PropTypes.shape({
-    loadContainer: PropTypes.string,
-    loadHolder: PropTypes.string,
-    loadBox: PropTypes.string,
-  }).isRequired,
-};
 
 export default Loader;
