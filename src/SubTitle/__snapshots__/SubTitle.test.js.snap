@@ -2,17 +2,20 @@
 
 exports[`SubTitle component matches snapshot with a label prop 1`] = `
 <div>
-  <span
-    class="MuiTypography-root makeStyles-label-1 MuiTypography-overline MuiTypography-gutterBottom"
-    data-testid="subtitle-label"
-  >
-    Partner: 
-  </span>
   <h6
     class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-gutterBottom"
-    data-testid="subtitle-content"
   >
-    Partner1
+    <span
+      class="makeStyles-label-1"
+      data-testid="subtitle-label"
+    >
+      Partner: 
+    </span>
+    <span
+      data-testid="subtitle-content"
+    >
+      Partner1
+    </span>
   </h6>
 </div>
 `;
@@ -21,9 +24,12 @@ exports[`SubTitle component matches snapshot without a label prop 1`] = `
 <div>
   <h6
     class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-gutterBottom"
-    data-testid="subtitle-content"
   >
-    Partner1
+    <span
+      data-testid="subtitle-content"
+    >
+      Partner1
+    </span>
   </h6>
 </div>
 `;
