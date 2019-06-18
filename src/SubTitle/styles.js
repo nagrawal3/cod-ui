@@ -6,6 +6,15 @@ const useStyles = makeStyles(() => ({
     paddingRight: '0.25rem',
     fontVariant: 'small-caps',
   },
+  padded: {
+    padding: '0 2rem',
+    '&:first-child': {
+      paddingLeft: 0,
+    },
+    '&:last-child': {
+      paddingRight: 0,
+    },
+  },
 }));
 
 export default useStyles;
