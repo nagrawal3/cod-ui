@@ -44,7 +44,7 @@ export function showInfoNotification(message) {
   };
 }
 
-function notificationsReducer(state = [], action) {
+export function notificationsReducer(state = {}, action) {
   const { message, variant } = action;
 
   switch (action.type) {
@@ -53,7 +53,7 @@ function notificationsReducer(state = [], action) {
     case SHOW_SUCCESS_NOTIFICATION:
     case SHOW_WARNING_NOTIFICATION:
     case SHOW_INFO_NOTIFICATION:
-      return [{ message, variant }];
+      return { message, variant };
 
     default:
       break;
@@ -61,5 +61,3 @@ function notificationsReducer(state = [], action) {
 
   return state;
 }
-
-export default notificationsReducer;
