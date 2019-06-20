@@ -1,8 +1,8 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { useSnackbar } from 'notistack';
+import { useSnackbar, SnackbarProvider } from 'notistack';
 
-const Notifications = () => {
+export const Notifications = () => {
   const { enqueueSnackbar } = useSnackbar();
   const { message, variant } = useSelector(state => state.notifications);
 
@@ -15,4 +15,12 @@ const Notifications = () => {
   return null;
 };
 
-export default Notifications;
+const Provider = props => {
+  return (
+    <SnackbarProvider {...props}>
+      <Notifications />
+    </SnackbarProvider>
+  );
+};
+
+export default Provider;
