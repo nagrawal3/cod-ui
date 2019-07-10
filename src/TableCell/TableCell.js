@@ -42,7 +42,14 @@ const TableCell = props => {
 };
 
 TableCell.propTypes = {
-  tableColumn: PropTypes.shape({}).isRequired,
+  tableColumn: PropTypes.shape({
+    column: PropTypes.shape({
+      columnClass: PropTypes.string,
+      customFormatter: PropTypes.func,
+      Component: PropTypes.elementType,
+      cellClasses: PropTypes.shape({}),
+    }),
+  }).isRequired,
   value: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number,
