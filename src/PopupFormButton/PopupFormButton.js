@@ -73,7 +73,10 @@ const PopupFormButton = props => {
 
 PopupFormButton.propTypes = {
   Form: PropTypes.elementType.isRequired,
-  ButtonProps: PropTypes.shape({}),
+  ButtonProps: PropTypes.shape({
+    variant: PropTypes.string,
+    color: PropTypes.string,
+  }),
   buttonText: PropTypes.string,
   Icon: PropTypes.elementType,
   /**
