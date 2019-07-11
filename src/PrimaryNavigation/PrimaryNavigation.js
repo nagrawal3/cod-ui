@@ -25,7 +25,7 @@ const PrimaryNavigation = ({ user, mainNav, onLogout }) => {
               href={nav.href}
               className={classes.button}
               data-testid="partner-button"
-              target="_blank"
+              target={nav.target || '_self'}
             >
               {nav.label}
             </Button>
