@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/styles';
 const useStyles = makeStyles(theme => ({
   label: {
     fontWeight: 'bold',
-    color: theme.palette.primary.light,
   },
   item: {
     flex: 'none',
