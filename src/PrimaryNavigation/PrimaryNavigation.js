@@ -42,7 +42,7 @@ const PrimaryNavigation = ({ user, mainNav, onLogout }) => {
             <AccountCircle />
 
             <Typography variant="body1" color="inherit" className={classes.userName}>
-              {user.email}
+              {user.name}
             </Typography>
           </IconButton>
 
@@ -76,7 +76,7 @@ const PrimaryNavigation = ({ user, mainNav, onLogout }) => {
 
 PrimaryNavigation.propTypes = {
   user: PropTypes.shape({
-    email: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
   }),
   mainNav: PropTypes.arrayOf(
     PropTypes.shape({
