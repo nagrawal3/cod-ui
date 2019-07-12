@@ -56,7 +56,7 @@ Select.propTypes = {
   form: PropTypes.shape({
     dirty: PropTypes.bool,
     errors: PropTypes.object,
-    touched: PropTypes.bool,
+    touched: PropTypes.shape({}),
   }).isRequired,
   options: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   required: PropTypes.bool,

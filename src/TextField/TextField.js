@@ -29,7 +29,7 @@ TextField.propTypes = {
   form: PropTypes.shape({
     dirty: PropTypes.bool,
     errors: PropTypes.object,
-    touched: PropTypes.bool,
+    touched: PropTypes.shape({}),
   }).isRequired,
   fullWidth: PropTypes.bool,
   margin: PropTypes.oneOf(['none', 'dense', 'normal']),
