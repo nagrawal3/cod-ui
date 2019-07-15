@@ -62,6 +62,8 @@
     "prettier": "^1.18.2"
   },
   "dependencies": {
+    "@devexpress/dx-core": "^2.0.0",
+    "@devexpress/dx-grid-core": "^2.0.0",
     "@devexpress/dx-react-core": "^2.0.0",
     "@devexpress/dx-react-grid": "^2.0.0",
     "@devexpress/dx-react-grid-material-ui": "^2.0.0",
