@@ -12,7 +12,7 @@ describe('PrimaryNavigation', () => {
     const { getByTestId } = renderWithProviders(
       <PrimaryNavigation
         {...{
-          user: { email: 'foo' },
+          user: { email: 'foo', name: 'foo' },
           mainNav: [{ label: 'Partners', href: 'http://partner' }],
           onLogout() {},
         }}
