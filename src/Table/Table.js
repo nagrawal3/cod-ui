@@ -7,6 +7,7 @@ import {
   IntegratedSorting,
   IntegratedFiltering,
   IntegratedPaging,
+  FilteringState,
 } from '@devexpress/dx-react-grid';
 import {
   Grid,
@@ -17,7 +18,16 @@ import {
 import TableCell from '../TableCell';
 
 const Table = props => {
-  const { data, columns, pageSize, hasPagination, searchValue, sortable, defaultSorting } = props;
+  const {
+    data,
+    columns,
+    pageSize,
+    hasPagination,
+    searchValue,
+    filters,
+    sortable,
+    defaultSorting,
+  } = props;
   const tableColumnExtensions = [];
 
   columns.forEach(column => {
@@ -32,6 +42,7 @@ const Table = props => {
         {sortable && <SortingState defaultSorting={defaultSorting} />}
         {sortable && <IntegratedSorting />}
         <SearchState value={searchValue} />
+        <FilteringState filters={filters} />
         <IntegratedFiltering />
 
         {hasPagination && <PagingState defaultCurrentPage={0} pageSize={pageSize} />}
@@ -54,6 +65,7 @@ Table.propTypes = {
   hasPagination: PropTypes.bool,
   pageSize: PropTypes.number,
   searchValue: PropTypes.string,
+  filters: PropTypes.arrayOf(PropTypes.shape({})),
   sortable: PropTypes.bool,
   defaultSorting: PropTypes.arrayOf(PropTypes.shape({})),
 };
@@ -62,6 +74,7 @@ Table.defaultProps = {
   hasPagination: false,
   pageSize: 10,
   searchValue: '',
+  filters: [],
   sortable: true,
   defaultSorting: [{}],
 };
