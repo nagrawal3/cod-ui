@@ -25,6 +25,7 @@ const Table = props => {
     hasPagination,
     searchValue,
     filters,
+    columnExtensions,
     sortable,
     defaultSorting,
   } = props;
@@ -43,7 +44,7 @@ const Table = props => {
         {sortable && <IntegratedSorting />}
         <SearchState value={searchValue} />
         <FilteringState filters={filters} />
-        <IntegratedFiltering />
+        <IntegratedFiltering columnExtensions={columnExtensions} />
 
         {hasPagination && <PagingState defaultCurrentPage={0} pageSize={pageSize} />}
         {hasPagination && <IntegratedPaging />}
@@ -66,6 +67,7 @@ Table.propTypes = {
   pageSize: PropTypes.number,
   searchValue: PropTypes.string,
   filters: PropTypes.arrayOf(PropTypes.shape({})),
+  columnExtensions: PropTypes.arrayOf(PropTypes.shape({})),
   sortable: PropTypes.bool,
   defaultSorting: PropTypes.arrayOf(PropTypes.shape({})),
 };
@@ -75,6 +77,7 @@ Table.defaultProps = {
   pageSize: 10,
   searchValue: '',
   filters: [],
+  columnExtensions: [],
   sortable: true,
   defaultSorting: [{}],
 };
