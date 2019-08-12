@@ -6,6 +6,8 @@ import useStyles from './styles';
 
 /**
  * Individual item for workflow
+ *
+ * @example ../__docs__/WorkflowStatusItem.md
  */
 const WorkflowStatusItem = props => {
   const { title, active, status } = props;

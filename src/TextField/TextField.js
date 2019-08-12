@@ -2,6 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import MUITextField from '@material-ui/core/TextField';
 
+/**
+ * Text field to be used in forms
+ *
+ * @example ../__docs__/TextField.md
+ */
 const TextField = ({ label, field, form: { dirty, touched, errors }, ...other }) => {
   const errorText = errors[field.name];
   const hasError = dirty && touched[field.name] && errorText !== undefined;

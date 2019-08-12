@@ -10,7 +10,7 @@ import useStyles from './styles';
 /**
  * Displays the current state of an editorial workflow
  *
- * @example ./__docs__/WorkflowStatus.md
+ * @example ../__docs__/WorkflowStatus.md
  */
 const WorkflowStatus = ({ status, label }) => {
   const classes = useStyles();
